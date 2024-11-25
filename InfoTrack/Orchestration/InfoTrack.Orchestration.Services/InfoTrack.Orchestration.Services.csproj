@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\InfoTrack.Common\InfoTrack.Common.csproj" />
+    <ProjectReference Include="..\..\Domain\InfoTrack.Domain.Entities\InfoTrack.Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\Domain\InfoTrack.Domain.Interfaces\InfoTrack.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\InfoTrack.Infrastructure.InMemory\InfoTrack.Infrastructure.InMemory.csproj" />
+    <ProjectReference Include="..\InfoTrack.Orchestration.Entities\InfoTrack.Orchestration.Entities.csproj" />
+    <ProjectReference Include="..\InfoTrack.Orchestration.Interfaces\InfoTrack.Orchestration.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
